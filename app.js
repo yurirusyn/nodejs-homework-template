@@ -12,6 +12,7 @@ app.use(logger(formatsLogger));
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/auth", routers.auth);
 app.use("/api/contacts", routers.contacts);
 
 app.use((req, res) => {
