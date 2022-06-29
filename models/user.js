@@ -15,6 +15,9 @@ const userSchema = Schema({
     unique: true,
     match: emailRegexp,
   },
+  avatarURL: {
+    type: String,
+  },
   subscription: {
     type: String,
     enum: ["starter", "pro", "business"],
